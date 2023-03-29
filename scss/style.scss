@@ -1,0 +1,35 @@
+$background-color_1: #bc0000;
+$background-color_2: #f0f0f0;
+$border-color_1: #bc0000;
+
+body {
+  background: $background-color_2;
+}
+.main-bg {
+  background: $background-color_1;
+}
+input {
+  &:focus {
+    border: 1px solid $border-color_1 !important;
+    box-shadow: none !important;
+  }
+  border-radius: 0;
+}
+button {
+  &:focus {
+    border: 1px solid $border-color_1;
+    box-shadow: none;
+  }
+}
+.form-check-input {
+  &:checked {
+    background-color: $background-color_1;
+    border-color: $border-color_1;
+  }
+}
+.card {
+  border-radius: 0;
+}
+.btn {
+  border-radius: 0;
+}
